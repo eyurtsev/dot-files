@@ -57,7 +57,8 @@ def main():
             subprocess.call(["i3-msg", "[id=%s] focus" % matches[0]['window']])
             return
     # No matches found, launch program
-    subprocess.call(["i3-msg", "exec", "--no-startup-id", sys.argv[2]])
+    executable = sys.argv[2]
+    subprocess.call(["i3-msg", f"exec --no-startup-id {executable}"])
 
 if __name__ == '__main__':
     main()
