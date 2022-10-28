@@ -28,13 +28,13 @@ floating_modifier $mod
 bindsym $mod+Shift+Return exec i3-sensible-terminal
 
 # Run or raise bindings
-bindsym $sup+f exec python3 ~/.i3/runorraise.py "Firefox" firefox
-bindsym $sup+c exec python3 ~/.i3/runorraise.py "Google-chrome|X-www" "google-chrome --disable-gpu"
-bindsym $sup+t exec python3 ~/.i3/runorraise.py "terminal" i3-sensible-terminal
-bindsym $sup+e exec python3 ~/.i3/runorraise.py "Pycharm" pycharm
-bindsym $sup+k exec python3 ~/.i3/runorraise.py "Krusader" krusader
-bindsym $sup+o exec python3 ~/.i3/runorraise.py "Spotify" spotify
-bindsym $sup+l exec python3 ~/.i3/runorraise.py "Slack" slack
+bindsym $sup+f exec python3 ~/.config/i3/runorraise.py "Firefox" firefox
+bindsym $sup+c exec python3 ~/.config/i3/runorraise.py "Google-chrome|X-www" "google-chrome --disable-gpu"
+bindsym $sup+t exec python3 ~/.config/i3/runorraise.py "terminal" i3-sensible-terminal
+bindsym $sup+e exec python3 ~/.config/i3/runorraise.py "Pycharm" pycharm
+bindsym $sup+k exec python3 ~/.config/i3/runorraise.py "Krusader" krusader
+bindsym $sup+o exec python3 ~/.config/i3/runorraise.py "Spotify" spotify
+bindsym $sup+l exec python3 ~/.config/i3/runorraise.py "Slack" slack
 bindsym $sup+9 exec scrot
 bindsym $sup+0 exec feh --randomize --bg-fill /usr/share/backgrounds
 
@@ -185,7 +185,7 @@ bar {
     # i3bar position
     position top
     # Using custom i3status.conf
-    status_command i3status -c ~/.i3/i3status.conf
+    status_command i3status -c ~/.config/i3/i3status.conf
 }
 
 
