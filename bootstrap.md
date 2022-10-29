@@ -1,52 +1,42 @@
 # Instructions for bootstrapping ubuntu machine
 
-```
-sudo apt-get install build-essential libssl-dev git gcc g++ 
-sudo apt-get install gfortran
-```
+## Set up i3
 
-```
-sudo apt-get install python-pip
-sudo apt-get install python-dev
-sudo apt-get build-dep matplotlib
-sudo pip install virtualenv virtualenvwrapper
-sudo apt-get install cython
-sudo apt-get install liblapack-dev libblas-dev
-```
-
-# Install stuff
-
-sudo apt install git \ 
+sudo apt install i3 \
+     apt install git \ 
      apt install xodotool \
      apt install vim neovim
 
-# Further configuration
+Set up i3/config, and window cycling 
 
-1) i3/config set paths for window cycling to .config/i3
-2) Download ohmyzsh
-3) Download suggestions for zsh
+## Set up ohmyzsh
+
+1. Download ohmyzsh
+2. Download suggestions for zsh
+3. Set up plugins
+
+## Download docker
+
+https://docs.docker.com/desktop/install/debian/
 
 
+## Set up pyenv and install a global python
 
-# Bash misc
+1) Get pyenv https://github.com/pyenv/pyenv-installer
+2) Set up pyenv (add to .zshrc)
+
+Get dependencies:
+
+```
+sudo apt install build-essential gcc g++ gfortran
+```
+
+```
+sudo apt-get install aria2 curl git libbz2-dev libffi-dev liblzma-dev libncurses5-dev libncursesw5-dev libreadline-dev libsqlite3-dev libssl-dev llvm make tk-dev wget xz-utils zlib1g-dev --yes;
+```
+
+## Set up nvm, npm
+
+## Download pycharm, vscode
 
 
-  "\e[B": history-search-forward
-  "\e[A": history-search-backward
-   
-  $if Bash
-    # F10 toggles mc on and off
-    # Note Ctrl-o toggles panes on and off in mc
-    "\e[21~": "mc\C-M"
-   
-    #do history expansion when space entered
-    Space: magic-space
-  $endif
-
-  # Include system wide settings which are ignored by default if one has their own .inputrc
-
-  $include /etc/inputrc
-  set show-all-if-ambiguous on
-
-  # set command history filter
-  export HISTIGNORE="&:ls:[bf]g:exit"
