@@ -41,9 +41,12 @@ bindsym $sup+0 exec feh --randomize --bg-fill /usr/share/backgrounds
 # Locking the screen
 bindsym Mod1+ctrl+l exec gnome-screensaver-command -l
 
+# Commands to control sinks
+bindsym $sup+3 exec swap_sinks.sh
+bindsym $sup+2 exec sink_to_hdmi.sh
+
 ## Adding multimedia controls for controling volume
 # https://faq.i3wm.org/question/125/how-to-change-the-systems-volume/
-
 set $sink `pactl list short sinks | grep RUNNING | cut -f1`
 bindsym $sup+x exec --no-startup-id pactl set-sink-volume $sink +10%
 bindsym $sup+z exec --no-startup-id pactl set-sink-volume $sink -10%
