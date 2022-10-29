@@ -14,10 +14,18 @@ sudo apt-get install cython
 sudo apt-get install liblapack-dev libblas-dev
 ```
 
-# Set up virtual env
+# Install stuff
 
-  echo "export WORKON_HOME=~/.envs" >> ~/.bashrc
-  echo "source $(which virtualenvwrapper.sh)" >> ~/.bashrc
+sudo apt install git \ 
+     apt install xodotool \
+     apt install vim neovim
+
+# Further configuration
+
+1) i3/config set paths for window cycling to .config/i3
+2) Download ohmyzsh
+3) Download suggestions for zsh
+
 
 
 # Bash misc
