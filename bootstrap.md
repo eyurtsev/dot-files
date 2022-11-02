@@ -9,16 +9,40 @@ sudo apt install i3 \
 
 Set up i3/config, and window cycling 
 
+
 ## Set up ohmyzsh
 
 1. Download ohmyzsh
 2. Download suggestions for zsh
 3. Set up plugins
 
+
+## Compile xsecure lock from source
+
+
+Add dependencies
+
+```
+sudo apt install libpam0g-dev libxmu-dev
+```
+
+
+Set up xsecure lock
+
+https://github.com/google/xsecurelock
+
+Make sure to set it up in disco mode
+
 ## Download docker
 
 https://docs.docker.com/desktop/install/debian/
 
+## Fonts
+
+```
+apt install texlive-fonts-extra
+apt install texlive-fonts-recommended
+```
 
 ## Set up pyenv and install a global python
 
